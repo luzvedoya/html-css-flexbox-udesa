@@ -1,0 +1,87 @@
+/*CSS GLOBALES*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* CSS HEADER*/
+
+.header{
+    /*Es lo mismo que poner
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:10px;*/
+    display: flex;
+    background-color: teal;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 20%;
+}
+
+.menu .opciones{
+    width: 80%;
+}
+
+.opciones{
+    display: flex;
+}
+
+.opciones li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.opciones li a:hover{ 
+    text-decoration: underline;
+}
+
+/*CSS IMAGEN*/
+
+.imagen{
+    background-image: url('../img/invierno.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed; /*sin esta se ve completa la imagen*/
+    height: 600px;
+    width: 100%;
+}
+
+/*CSS PRODUCTOS*/
+
+.productos{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.productos article img{
+    padding: 10px; /*le da espaciado a los costados y arriba a las imagenes*/
+    border-radius: 20px;
+}
+
+/* CSS FOOTER*/
+
+.footer{
+    background-color: teal;
+    color: white;
+    display: flex;
+    /*justify-content: space-around; pone espacios para centrar*/
+    justify-content:space-between; /*los manda uno para cada costado*/
+}
+
+h2 a{
+    color: white;
+}
